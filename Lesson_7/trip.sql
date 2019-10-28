@@ -27,6 +27,6 @@ VALUES ('Moscow', 'Москва'),
 
 SELECT
   id,
-  (SELECT name FROM cities WHERE label = `_from` ),
-  (SELECT name FROM cities WHERE label = `_to` )
+  (SELECT name FROM cities WHERE label = `_from` ) AS FR0M,
+  (SELECT name FROM cities WHERE label = `_to` ) AS T0
 FROM flights;
